@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta content="text/html; charset=IBM437" http-equiv="Content-Type" />
+
+  <title>File: HangmanHandler.rb [RDoc Documentation]</title>
+
+  <link type="text/css" media="screen" href="./rdoc.css" rel="stylesheet" />
+
+  <script src="./js/jquery.js" type="text/javascript"
+    charset="utf-8"></script>
+  <script src="./js/thickbox-compressed.js" type="text/javascript"
+    charset="utf-8"></script>
+  <script src="./js/quicksearch.js" type="text/javascript"
+    charset="utf-8"></script>
+  <script src="./js/darkfish.js" type="text/javascript"
+    charset="utf-8"></script>
+</head>
+
+<body class="file file-popup">
+  <div id="metadata">
+    <dl>
+      <dt class="modified-date">Last Modified</dt>
+      <dd class="modified-date">2013-02-27 13:11:30 -0600</dd>
+
+      
+      <dt class="requires">Requires</dt>
+      <dd class="requires">
+        <ul>
+        
+          <li>./HangmanManager</li>
+        
+        </ul>
+      </dd>
+      
+
+      
+    </dl>
+  </div>
+
+  <div id="documentation">
+    
+    <div class="description">
+      <h2>Description</h2>
+      
+<h2>Evil Hangman</h2>
+
+<pre>Welcome to evil hangman, the game of hangman that will make you pull your
+hair out. Do your best to beat the computer, it's harder than it seems.</pre>
+
+<h2>Explanation</h2>
+
+<pre>As you could guess, this isn't your average game of hangman. In this game
+the computer will cheat, putting off picking the word until the last possible
+moment. The computer starts out with a dictionary of words. First you pick
+a word length, then the computer narrows down the list to the given word
+length. Then, every time you pick a letter, it splits up the dictionary into
+several lists of words, depending on the placement of the given letter.
+It then picks the largest list, and says your letter was put where it is for
+the list of letters and has you guess again. Without +debug+, this game is
+built to look like your average game of hangman.</pre>
+
+<h2>Classes</h2>
+
+<h3><a href="HangmanManager_rb.html">HangmanManager.rb</a> </h3>
+
+<pre>manages the actual list and any modifications to it. guesses
+are passed to it, and it returns the longest list along with several other
+helpful functions.</pre>
+
+<h3><a href="HangmanHandler_rb.html">HangmanHandler.rb</a></h3>
+
+<pre>This manages all of the functions for the game itself, such as the initialization
+of the game, taking the guesses, and seeing if their valid. It's essentially
+the front end of the program.</pre>
+
+<h2>Documentation</h2>
+
+<pre>Author:: Bastion Fennell
+Date:: Wednesday, February 27, 2013</pre>
+
+    </div>
+    
+  </div>
+</body>
+</html>
+

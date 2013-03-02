@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta content="text/html; charset=IBM437" http-equiv="Content-Type" />
+
+  <title>RDoc Documentation</title>
+
+  <link type="text/css" media="screen" href="rdoc.css" rel="stylesheet" />
+
+  <script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
+  <script src="js/thickbox-compressed.js" type="text/javascript" charset="utf-8"></script>
+  <script src="js/quicksearch.js" type="text/javascript" charset="utf-8"></script>
+  <script src="js/darkfish.js" type="text/javascript" charset="utf-8"></script>
+
+</head>
+<body class="indexpage">
+
+  
+  <h1>RDoc Documentation</h1>
+
+  
+  <div id="main">
+    
+<h2>Evil Hangman</h2>
+
+<pre>Welcome to evil hangman, the game of hangman that will make you pull your
+hair out. Do your best to beat the computer, it's harder than it seems.</pre>
+
+<h2>Explanation</h2>
+
+<pre>As you could guess, this isn't your average game of hangman. In this game
+the computer will cheat, putting off picking the word until the last possible
+moment. The computer starts out with a dictionary of words. First you pick
+a word length, then the computer narrows down the list to the given word
+length. Then, every time you pick a letter, it splits up the dictionary into
+several lists of words, depending on the placement of the given letter.
+It then picks the largest list, and says your letter was put where it is for
+the list of letters and has you guess again. Without +debug+, this game is
+built to look like your average game of hangman.</pre>
+
+<h2>Classes</h2>
+
+<h3><a href="HangmanManager_rb.html">HangmanManager.rb</a> </h3>
+
+<pre>manages the actual list and any modifications to it. guesses
+are passed to it, and it returns the longest list along with several other
+helpful functions.</pre>
+
+<h3><a href="HangmanHandler_rb.html">HangmanHandler.rb</a></h3>
+
+<pre>This manages all of the functions for the game itself, such as the initialization
+of the game, taking the guesses, and seeing if their valid. It's essentially
+the front end of the program.</pre>
+
+<h2>Documentation</h2>
+
+<pre>Author:: Bastion Fennell
+Date:: Wednesday, February 27, 2013</pre>
+
+  </div>
+  
+
+  
+  
+  <h2>Files</h2>
+  <ul>
+    
+      <li class="file"><a href="dictionary_txt.html">dictionary.txt</a></li>
+    
+  </ul>
+  
+
+  <h2 id="classes">Classes/Modules</h2>
+  <ul>
+    
+    <li class="class"><a href="HangmanHandler.html">HangmanHandler</a></li>
+    
+    <li class="class"><a href="HangmanManager.html">HangmanManager</a></li>
+    
+  </ul>
+
+  <h2 id="methods">Methods</h2>
+  <ul>
+    
+      <li><a href="HangmanHandler.html#method-c-new">::new &mdash; HangmanHandler</a></li>
+    
+      <li><a href="HangmanManager.html#method-c-new">::new &mdash; HangmanManager</a></li>
+    
+      <li><a href="HangmanManager.html#method-i-already_guessed-3F">#already_guessed? &mdash; HangmanManager</a></li>
+    
+      <li><a href="HangmanHandler.html#method-i-at_least_one_word-3F">#at_least_one_word? &mdash; HangmanHandler</a></li>
+    
+      <li><a href="HangmanHandler.html#method-i-dictionary_to_array">#dictionary_to_array &mdash; HangmanHandler</a></li>
+    
+      <li><a href="HangmanHandler.html#method-i-get_count">#get_count &mdash; HangmanHandler</a></li>
+    
+      <li><a href="HangmanHandler.html#method-i-get_letter">#get_letter &mdash; HangmanHandler</a></li>
+    
+      <li><a href="HangmanManager.html#method-i-get_secret_word">#get_secret_word &mdash; HangmanManager</a></li>
+    
+      <li><a href="HangmanHandler.html#method-i-is_english_letter-3F">#is_english_letter? &mdash; HangmanHandler</a></li>
+    
+      <li><a href="HangmanManager.html#method-i-make_guess">#make_guess &mdash; HangmanManager</a></li>
+    
+      <li><a href="HangmanManager.html#method-i-num_words">#num_words &mdash; HangmanManager</a></li>
+    
+      <li><a href="HangmanManager.html#method-i-num_words_current">#num_words_current &mdash; HangmanManager</a></li>
+    
+      <li><a href="HangmanHandler.html#method-i-play_again-3F">#play_again? &mdash; HangmanHandler</a></li>
+    
+      <li><a href="HangmanHandler.html#method-i-play_game">#play_game &mdash; HangmanHandler</a></li>
+    
+      <li><a href="HangmanManager.html#method-i-prep_for_round">#prep_for_round &mdash; HangmanManager</a></li>
+    
+      <li><a href="HangmanHandler.html#method-i-set_game_parameters">#set_game_parameters &mdash; HangmanHandler</a></li>
+    
+      <li><a href="HangmanHandler.html#method-i-show_patterns">#show_patterns &mdash; HangmanHandler</a></li>
+    
+      <li><a href="HangmanHandler.html#method-i-show_results">#show_results &mdash; HangmanHandler</a></li>
+    
+      <li><a href="HangmanHandler.html#method-i-show_word_counts">#show_word_counts &mdash; HangmanHandler</a></li>
+    
+      <li><a href="HangmanHandler.html#method-i-valid_choice-3F">#valid_choice? &mdash; HangmanHandler</a></li>
+    
+  </ul>
+
+  <div id="validator-badges">
+    <p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+    <p><small>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish
+      Rdoc Generator</a> 2</small>.</p>
+  </div>
+</body>
+</html>
