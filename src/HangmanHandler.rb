@@ -231,6 +231,7 @@ class HangmanHandler
     dictionary_list = Array.new
     @dictionary_file.each do |word|
       word.delete! "\n"
+      word.delete! "\r"
       dictionary_list << word
     end
     dictionary_list
